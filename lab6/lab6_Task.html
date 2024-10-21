@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yooo lab6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container border">
+        <legend>Внесення даних про освітню компоненту ОПП до ІС "Каталог освітніх компонент"</legend>
+        <form id="myForm" novalidate>
+        <div class="col"  id="Form">
+            <label class="mb-2" for="form">Освітня програма</label>
+            <select class="form-select mb-2" id="form" required>
+                <option selected disabled value="">Оберіть освітню програму</option>
+                <option value="1">Економіка підприємства</option>
+                <option value="2">Облік і аудит</option>
+                <option value="3">Менеджмент</option>
+                <option value="4">Екологія</option>
+                <option value="5">Комп'ютерні науки</option>
+                <option value="6">Електроенергетика, електротехніка та електромеханіка</option>
+                <option value="7">Агрономія</option>
+                <option value="8">Лісове господарство</option>
+                <option value="9">Садово-паркове господарство</option>
+                <option value="10">Агроінженерія</option>
+                <option value="11">Туризм</option>
+              </select>
+
+
+              <div class="invalid-feedback mb-2">Будь ласка оберіть освітню програму</div>
+              <div class="valid-feedback mb-2">Чудово</div>
+<!-- osvitni stupen -->
+              <label class="fw-bold">Освітній стурінь</label>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault1" required>
+                  <label class="form-check-label" for="flexSwitchCheckDefault1">Бакалавр</label>
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2" required>
+                  <label class="form-check-label" for="flexSwitchCheckDefault2">Магістр</label>
+                </div>
+
+<!-- termin nauki -->
+                <label class="fw-bold" for="flexRadioDefault1">Термін навчання</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Скорочений
+                  </label>
+                </div>
+                
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Повний
+                  </label>
+                </div>
+<!-- trete zavdana -->
+
+<label class="fw-bold">Вид ОК</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexDefault" id="flexDefault3" required>
+  <label class="form-check-label" for="flexDefault3">
+    Обов'язкова компонента(ОК)
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexDefault" id="flexDefault4" required>
+  <label class="form-check-label" for="flexDefault4">
+    Обов'язкова компонента за вибором інституту (ОКІ)
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexDefault" id="flexDefault5" required>
+  <label class="form-check-label" for="flexDefault5">
+    Вибіркова фахова компонента (ВК)
+  </label>
+</div>
+<div class="form-check mb-3">
+  <input class="form-check-input" type="radio" name="flexDefault" id="flexDefault6" required>
+  <label class="form-check-label" for="flexDefault6">
+    Вибіркова компонента за уподобання здобувача (ВКУ)
+  </label>
+</div>
+<label class="fw-bold">Вид ОК</label><br>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+  <label class="form-check-label" for="inlineRadio1">Анотація</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+  <label class="form-check-label" for="inlineRadio2">Силабус</label>
+</div>
+<div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+  <label class="form-check-label" for="inlineRadio3">Робоча програма</label>
+</div><br>
+
+
+
+  <div class="form-group">
+      <label for="Input1" class="mb-2">Номаер ОК за ООП</label>
+      <input type="text" class="form-control" id="Input1" placeholder="01..09 або 10, 11 і.д." required>
+    </div>
+    <div class="form-group">
+      <label for="num" class="mb-2">Номер з блоку інакше 0</label>
+      <input type="number" class="form-control" id="num" value="0" required>
+    </div>
+    <div class="form-group">
+      <label for="Input2" class="mb-2">Номаер ОК у відповідності до ООП</label>
+      <input type="email" class="form-control" id="Input2" placeholder="Назва ОК..." required>
+    </div>
+    <div class="form-group">
+      <label for="date" class="mb-2">Дата затвердження  ОК</label>
+      <input type="date" class="form-control mb-3" id="date" required>
+    </div>
+
+    <fieldset class="border rounded-3 p-3">
+      <legend class="float-none w-auto px-3">Семестер вивчення ОК</legend>
+      <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="sem. 1">
+          <label class="form-check-label" for="inlineCheckbox1">1 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="sem. 2">
+          <label class="form-check-label" for="inlineCheckbox2">2 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="sem. 3">
+          <label class="form-check-label" for="inlineCheckbox3">3 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="sem. 4">
+          <label class="form-check-label" for="inlineCheckbox4">4 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="sem. 5">
+          <label class="form-check-label" for="inlineCheckbox5">5 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="sem. 6">
+          <label class="form-check-label" for="inlineCheckbox6">6 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="sem. 7">
+          <label class="form-check-label" for="inlineCheckbox7">7 сем.</label>
+        </div>
+        <div class="form-check form-check-inline  mb-3">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="sem. 8">
+          <label class="form-check-label" for="inlineCheckbox8">8 сем.</label>
+        </div>
+  </fieldset>
+
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="reset" class="btn btn-primary mb-2">Clear</button>
+        </form>
+    </div>
+    <div class="container border">
+
+    </div>
+</body>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", 
+    function(event) {
+    event.preventDefault();
+    if (this.checkValidity() === false) {
+     event.stopPropagation(); 
+     }
+    this.classList.add("was-validated");}, false);
+    </script>
+</html>
