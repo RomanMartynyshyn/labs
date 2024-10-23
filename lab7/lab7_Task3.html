@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>look like form for bati site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container border border-rouded p-2">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="container border rounded-3 p-2">
+                        <div class="row g-3">
+                            <div class="col-auto">
+                              <label for="inputPassword6" class="col-form-label">Освітня програма</label>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select">
+                                    <option selected disabled value="">---Оберіть освітню програму---</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-1">Освітній ступінь</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="stupin" id="bacal" value="bag">
+                            <label class="form-check-label" for="bacal">Бакалавр</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="stupin" id="magistr" value="mag">
+                            <label class="form-check-label" for="magistr">Магістр</label>
+                          </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-1">Термін навчання</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="term" id="short" value="scor">
+                            <label class="form-check-label" for="short">Скорочений</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="term" id="ful" value="povn">
+                            <label class="form-check-label" for="ful">Повний</label>
+                          </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-1">Вид ОК</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                              Обовязкова компонента (ОК)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Обовязкова компонента за вибором інституту (ОКІ)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+                            <label class="form-check-label" for="exampleRadios3">
+                              Вибіркова фахова компонента (ВК)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+                            <label class="form-check-label" for="exampleRadios4">
+                              Вибіркова компонента за уподобанняздобувача (ВКУ)
+                            </label>
+                          </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-5 mb-2">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-1">Номер ОК за ОПП</legend>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Введіть номер</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="01..09 або 10, 11 і.д.">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Номер з блоку (інакше 0)</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" value="0">
+                          </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container border rounded-3 mb-2">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Назва ОК у відповідності до ОПП</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Назва ОК..">
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-1">Тип документа ОК</legend>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="oktype" id="anot" value="bag">
+                            <label class="form-check-label" for="anot">Анотація</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="oktype" id="sil" value="mag">
+                            <label class="form-check-label" for="sil">Силабус</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="oktype" id="prog" value="mag">
+                            <label class="form-check-label" for="prog">Робоча програма</label>
+                          </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                    <div class="container border rounded-3 p-2 mt-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Дата затвердження ОК</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput4">
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
