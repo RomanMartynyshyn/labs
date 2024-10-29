@@ -6,4 +6,4 @@
 <p style="color : yelow">lab 6 maybe finished</p>
 <p style="color : green">lab 7 finished</p>
 <p style="color : green">lab 8 finished</p>
-<p style="color : green">text</p>
+$${\color{orange}Orange}$$
