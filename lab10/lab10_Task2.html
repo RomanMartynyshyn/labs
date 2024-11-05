@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" id="database-tab" data-bs-toggle="tab" href="#database" role="tab"  href="#Database">Database</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Progpaming</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" id="python-tab" data-bs-toggle="tab" href="#python">Python</a></li>
+            <li><a class="dropdown-item" id="java-tab" data-bs-toggle="tab" href="#java">Java</a></li>
+            <li><a class="dropdown-item" id="kotlin-tab" data-bs-toggle="tab" href="#kotlin">Kotlin</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="backend-tab" data-bs-toggle="dropdown" href="#">Back End</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="php-tab" data-bs-toggle="tab" href="#php">PHP</a></li>
+              <li><a class="dropdown-item" id="nodejs-tab" data-bs-toggle="tab" href="#nodejs">Note.Js</a></li>
+              <li><a class="dropdown-item" id="python-backend-tab" data-bs-toggle="tab" href="#python-backend">Python</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="frontend-tab" data-bs-toggle="dropdown" href="#">Front End</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="javascript-tab" data-bs-toggle="tab" href="#javascript">JavaScript</a></li>
+              <li><a class="dropdown-item" id="html-tab" data-bs-toggle="tab" href="#html">HTMP</a></li>
+              <li><a class="dropdown-item" id="css-tab" data-bs-toggle="tab" href="#css">CSS</a></li>
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="datascience-tab" data-bs-toggle="tab" href="#datascience">Data Science</a>
+      </ul>
+
+      <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="database" role="tabpanel" aria-labelledby="database-tab">
+          <p><strong>Database:</strong> Learn about various database systems, including relational and NoSQL databases, to store and manage data efficiently.</p>
+        </div>
+        <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
+          <p><strong>Python:</strong> Python is a versatile programming language used in web development, data science, and automation.</p>
+        </div>
+        <div class="tab-pane fade" id="java" role="tabpanel" aria-labelledby="java-tab">
+          <p><strong>Java:</strong> Java is a powerful, cross-platform language widely used in enterprise environments and Android development.</p>
+        </div>
+        <div class="tab-pane fade" id="kotlin" role="tabpanel" aria-labelledby="kotlin-tab">
+          <p><strong>Kotlin:</strong> Kotlin is a modern language for Android development, known for its concise syntax and interoperability with Java.</p>
+        </div>
+        <div class="tab-pane fade" id="php" role="tabpanel" aria-labelledby="php-tab">
+          <p><strong>PHP:</strong> PHP is a server-side scripting language commonly used for web development.</p>
+        </div>
+        <div class="tab-pane fade" id="nodejs" role="tabpanel" aria-labelledby="nodejs-tab">
+          <p><strong>Node.js:</strong> Node.js is a JavaScript runtime built on Chrome's V8 engine, ideal for building scalable network applications.</p>
+        </div>
+        <div class="tab-pane fade" id="python-backend" role="tabpanel" aria-labelledby="python-backend-tab">
+          <p><strong>Python (Back End):</strong> Python is often used in backend development for its simplicity and extensive libraries.</p>
+        </div>
+        <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+          <p><strong>JavaScript:</strong> JavaScript is essential for creating interactive web applications and is supported by all browsers.</p>
+        </div>
+        <div class="tab-pane fade" id="html" role="tabpanel" aria-labelledby="html-tab">
+          <p><strong>HTML:</strong> HTML is the standard language for creating and structuring web content.</p>
+        </div>
+        <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+          <p><strong>CSS:</strong> CSS is used to style and layout web pages, controlling the presentation of HTML elements.</p>
+        </div>
+        <div class="tab-pane fade" id="datascience" role="tabpanel" aria-labelledby="datascience-tab">
+          <p><strong>Data Science:</strong> Data science involves using statistical and computational techniques to extract insights from data.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
