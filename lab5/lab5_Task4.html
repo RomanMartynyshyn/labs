@@ -10,12 +10,11 @@
     <div class="container">
         <div   
  class="row justify-content-center">
-            <div class="col">
                 <h2 class="mb-4">Конвертер валют</h2>
                 <hr>
                 <form>
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-sm-5">
                             <label for="fromCurrency">Віддаємо:</label>
                             <select class="form-select" id="fromCurrency">
                                 <option value="USD">USD - долар</option>
@@ -42,12 +41,12 @@
                                 <option value="SKK">SKK - словацька крона</option>
                                 </select>
                         </div>
-                        <div class="col-2 d-flex justify-content-center align-items-center">
+                        <div class="col-sm-2 d-flex justify-content-center align-items-center mt-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
                               </svg>
                         </div>
-                        <div class="col-5">
+                        <div class="col-sm-5">
                             <label for="toCurrency">Отримуємо:</label>
                             <select class="form-select" id="toCurrency">
                                 <option value="USD">USD - долар</option>
@@ -76,18 +75,18 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-5">
+                        <div class="col-sm-5">
                             <label for="amountFrom" class="form-label">Скільки потрібно обміняти</label>
                             <input type="number" class="form-control" id="amountFrom" placeholder="Скільки потрібно обміняти">
                         </div>
-                        <div class="col-2  d-flex justify-content-center align-items-center"><p>або</p></div>
-                        <div class="col-5">
+                        <div class="col-sm-2  d-flex justify-content-center align-items-center mt-3"><p>або</p></div>
+                        <div class="col-sm-5">
                             <label for="amountTo" class="form-label">Скільки потрібно отримати</label>
                             <input type="number" class="form-control" id="amountTo" placeholder="Скільки потрібно отримати">
                         </div>
                     </div>
                 </form>
-            </div>
+
         </div>
     </div>
 
